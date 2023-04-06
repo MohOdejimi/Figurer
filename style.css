@@ -13,7 +13,7 @@
   align-items: center;
 }
 .calculator {
-  background: #3a4452;
+  background: black;
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -32,6 +32,7 @@
 }
 form input.equal {
   width: 10rem;
+  font-size: 2rem;
 }
 .display {
   display: flex;
@@ -42,18 +43,40 @@ form input.equal {
 .display input {
   text-align: right;
   flex: 1;
-  box-shadow: none;
   font-size: 2rem;
+}
+#number, #answer {
+  background: whitesmoke;
+  color: black;
+}
+#operator {
+  background: blue;
+  color: white;
+  border-top-right-radius: 12px;
 }
 @media all and (max-width: 400px) {
   .calculator {
-    width: 20rem;
+    width: 82vw;
+    height: 65vh;
+    padding: .5rem;
+    border-radius: none;
+  }
+  .display {
+    margin-top: 2rem;
   }
   .calculator form input {
-    width: 2.3rem;
-    height: 2.3rem;
+    border-radius: .65rem;
+    width: 1.92rem;
+    height: 2rem;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    margin: .5rem;
+    font-size: .8rem;
+    box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.1)
   }
   form input.equal {
-    width: 6.8rem;
+    width: 5rem;
+    font-size: 1.4rem;
   }
 }
