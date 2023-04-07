@@ -56,8 +56,8 @@ form input.equal {
 }
 @media all and (max-width: 400px) {
   .calculator {
-    width: 82vw;
-    height: 65vh;
+    width: 75%;
+    height: 55%;
     padding: .5rem;
     border-radius: none;
   }
@@ -65,15 +65,13 @@ form input.equal {
     margin-top: 2rem;
   }
   .calculator form input {
-    border-radius: .65rem;
-    width: 1.92rem;
-    height: 2rem;
+    width: 1.525rem;
+    height: 1.5rem;
     color: #fff;
     background: transparent;
     cursor: pointer;
     margin: .5rem;
     font-size: .8rem;
-    box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.1)
   }
   form input.equal {
     width: 5rem;
