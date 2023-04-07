@@ -16,7 +16,7 @@
     <div class = 'calculator'>
       <form>
         <div class = 'display'>
-          <input type ='text' name = "display" placeholder = "0"> 
+          <input id = 'display' type ='text' name = "display" placeholder = "0"> 
         </div>
        <div>
          <input type="button" value="log" onclick= "display.value = Math.log10(display.value)">
@@ -49,7 +49,7 @@
           <input id = 'number'type="button" value="7" onclick = "display.value += '7' ">
           <input type="button" value="pi" onclick = "display.value += 3.14159265359 ">
          <input type = "button" value = "e" onclick = "display.value += 2.718281828"> 
-         <input class = 'factorial' type = "button" value = "X!">
+         <input type = "button" onclick= "factorial()" value = "X!">
         </div>
         <div>
           <input id = 'number'type="button" value="6" onclick = "display.value += '6' ">
@@ -71,7 +71,7 @@
           <input id = 'number'type="button" value="00" onclick = "display.value += '00' ">
           <input id = 'number' type="button" value="0" onclick = "display.value += '0' ">
           <input id = 'number' type = "button" value = "." onclick = "display.value += '.' ">
-         <input id = 'answer' type = "button" value = "Ans" onclick = "display.value += '' ">
+         <input id = 'answer' type = "button" value = "Ans" onclick = "answer()">
          <input id = 'number'  type="button" value="=" class = "equal" onclick = "display.value = eval(display.value) ">
         </div>
         </section>
@@ -79,6 +79,13 @@
     </div>
   
   
-  <script>src ='main.js'</script>
+  <script>
+  function factorial() {
+    let i = 1;
+    let f = 1
+    for (i = 1; i <= display.value; i++) f *= i
+    display.value = f
+  }
+  </script>
 </body>
 </html>
