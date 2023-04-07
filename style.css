@@ -71,10 +71,10 @@ form input.equal {
     background: transparent;
     cursor: pointer;
     margin: .5rem;
-    font-size: .8rem;
+    font-size: .7rem;
   }
   form input.equal {
-    width: 5rem;
+    width: 4rem;
     font-size: 1.4rem;
   }
 }
