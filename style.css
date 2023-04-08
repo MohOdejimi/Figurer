@@ -16,6 +16,9 @@
   background: black;
   padding: 1rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .calculator form input {
   border: 0;
@@ -54,19 +57,23 @@ form input.equal {
   color: white;
   border-top-right-radius: 12px;
 }
+p {
+  margin: 0 auto;
+}
 @media all and (max-width: 400px) {
   .calculator {
-    width: 75%;
-    height: 55%;
+    width: 85%;
+    height: 65%;
     padding: .5rem;
     border-radius: none;
   }
   .display {
     margin-top: 2rem;
+    padding: .5rem;
   }
   .calculator form input {
-    width: 1.525rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     color: #fff;
     background: transparent;
     cursor: pointer;
@@ -74,7 +81,7 @@ form input.equal {
     font-size: .7rem;
   }
   form input.equal {
-    width: 4rem;
-    font-size: 1.4rem;
+    width: 5rem;
+    font-size: .9rem;
   }
 }
