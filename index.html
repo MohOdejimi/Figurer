@@ -19,12 +19,12 @@
           <input id = 'display' type ='text' name = "display" placeholder = "0"> 
         </div>
        <div>
-         <input type="button" value="log" onclick= "display.value = Math.log10(display.value)">
-         <input type="button" value="sin" onclick="display.value = Math.sin(display.value * Math.PI / 180)">
-         <input type="button" value="cos" onclick="display.value = Math.cos(display.value * Math.PI / 180)">
+         <input class = 'top-left'type="button" value="log" onclick= "display.value = Math.log10(display.value)">
+         <input id = 'button' type="button" value="sin" onclick="display.value = Math.sin(display.value * Math.PI / 180)">
+         <input id = 'button' type="button" value="cos" onclick="display.value = Math.cos(display.value * Math.PI / 180)">
          <input type="button" value="tan" onclick="display.value = Math.tan(display.value * Math.PI / 180)">
          <input type="button" value="x**2" onclick="display.value = Math.pow(display.value, 2) ">
-         <input type="button" value="x**3" onclick="display.value = Math.pow(display.value, 3) ">
+         <input class = 'top-right'type="button" value="x**3" onclick="display.value = Math.pow(display.value, 3) ">
       
        </div>
        <div>
@@ -36,55 +36,49 @@
          <input type="button" value="%" onclick="display.value = (display.value/100)">
        </div>
         <div>           
-         <input type="button" value="calc" onclick="display.value = eval(display.value) ">
-         <input type="button" value="(" onclick="display.value += '('">
-         <input type="button" value=")" onclick="display.value += ')'">
+         <input class = 'bottom-left' type="button" value="calc" onclick="display.value = eval(display.value) ">
+         <input type = "button" value = "e" onclick = "display.value += 2.718281828"> 
+         <input type="button" value="pi" onclick = "display.value += 3.14159265359 ">
           <input type = "button" value = "ln" onclick = "display.value = Math.log(display.value) ">             
           <input type = "button" value = "sqrt" onclick = "display.value = Math.sqrt(display.value) ">
-          <input type = "button" value = "cbrt" onclick = "display.value = Math.cbrt(display.value) ">
+          <input class = 'bottom-right'type = "button" value = "cbrt" onclick = "display.value = Math.cbrt(display.value) ">
         </div>
         <div>
-          <input id = 'number'type="button" value="9" onclick = "display.value += '9' ">
+         <input class = 'top-left' id = 'number'type="button" value="7" onclick = "display.value += '7' ">
           <input id = 'number'type="button" value="8" onclick = "display.value += '8' ">
-          <input id = 'number'type="button" value="7" onclick = "display.value += '7' ">
-          <input type="button" value="pi" onclick = "display.value += 3.14159265359 ">
-         <input type = "button" value = "e" onclick = "display.value += 2.718281828"> 
-         <input type = "button" onclick= "factorial()" value = "X!">
+          <input id = 'number'type="button" value="9" onclick = "display.value += '9' ">
+         <input id='operator' type="button" value="AC" onclick="display.value = '' ">
+         <input id='operator' type="button" value="DE" onclick="display.value = String(display.value).slice(0,-1) ">
+
+         <input class = 'top-right'type = "button" onclick= "factorial()" value = "X!">
         </div>
         <div>
-          <input id = 'number'type="button" value="6" onclick = "display.value += '6' ">
-          <input id = 'number' type="button" value="5" onclick = "display.value += '5' ">
-          <input id = 'number'type="button" value="4" onclick = "display.value += '4' ">
-          <input id = 'number'type="button" value="+" onclick = "display.value += '+' ">
-          <input id = 'operator' type="button" value="AC" onclick="display.value = '' ">
-          <input id = 'operator' type="button" value="DE" onclick="display.value = String(display.value).slice(0,-1) ">
+         <input id = 'number'type="button" value="4" onclick = "display.value += '4' ">
+         <input id = 'number' type="button" value="5" onclick = "display.value += '5' ">
+         <input id = 'number'type="button" value="6" onclick = "display.value += '6' ">
+         <input id = 'number'type="button" value="+" onclick = "display.value += '+' ">
+        <input id = 'number'type="button" value="(" onclick = "display.value += '(' ">
+        <input id = 'number'type="button" value=")" onclick = "display.value += ')' ">
         </div>
         <div>
-          <input id = 'number'type="button" value="3" onclick = "display.value += '3' ">
-          <input id = 'number'type="button" value="2" onclick = "display.value += '2' ">
           <input id = 'number'type="button" value="1" onclick = "display.value += '1' ">
+         <input id = 'number'type="button" value="2" onclick = "display.value += '2' ">
+          <input id = 'number'type="button" value="3" onclick = "display.value += '3' ">
           <input id = 'number' type="button" value="-" onclick = "display.value += '-' ">
           <input id = 'number' type = "button" value = "*" onclick = "display.value +=  '*' ">
           <input id = 'number' type = "button" value = "/" onclick = "display.value +=  '/' ">
         </div>
         <div>
-          <input id = 'number'type="button" value="00" onclick = "display.value += '00' ">
+          <input class = 'bottom-left' id = 'number'type="button" value="00" onclick = "display.value += '00' ">
           <input id = 'number' type="button" value="0" onclick = "display.value += '0' ">
           <input id = 'number' type = "button" value = "." onclick = "display.value += '.' ">
-         <input id = 'answer' type = "button" value = "Ans" onclick = "answer()">
-         <input id = 'number'  type="button" value="=" class = "equal" onclick = "display.value = eval(display.value) ">
+         <input class = 'answer' id = 'number' type = "button" value = "Ans">
+         <input  id = 'equal'  type="button" value="=" class = "equal" onclick = "display.value = eval(display.value) ">
         </div>
       </form>
-       <p>&copy; 2023. Designed and Built by Moh Odejimi</p>
     </div>
+     <p class = 'copyright '>&copy; 2023. Designed and Built by Moh Odejimi</p>
    </section>
-  <script>
-  function factorial() {
-    let i = 1;
-    let f = 1
-    for (i = 1; i <= display.value; i++) f *= i
-    display.value = f
-  }
-  </script>
+   <script src="main.js"></script>
 </body>
 </html>
