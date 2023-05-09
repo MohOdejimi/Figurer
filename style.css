@@ -56,6 +56,9 @@ body {
 #operator {
   background: cadetblue;
 }
+input:hover {
+  cursor: pointer;
+}
 .top-right {
   border-radius: 0px 5px 0px 0px;
 }
