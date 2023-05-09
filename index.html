@@ -19,29 +19,29 @@
           <input id = 'display' type ='text' name = "display" placeholder = "0"> 
         </div>
        <div>
-         <input class = 'top-left'type="button" value="log" onclick= "display.value = Math.log10(display.value)">
+         <input id = 'button' class = 'top-left'type="button" value="log" onclick= "display.value = Math.log10(display.value)">
          <input id = 'button' type="button" value="sin" onclick="display.value = Math.sin(display.value * Math.PI / 180)">
          <input id = 'button' type="button" value="cos" onclick="display.value = Math.cos(display.value * Math.PI / 180)">
-         <input type="button" value="tan" onclick="display.value = Math.tan(display.value * Math.PI / 180)">
+         <input id = 'button' type="button" value="tan" onclick="display.value = Math.tan(display.value * Math.PI / 180)">
          <input type="button" value="x**2" onclick="display.value = Math.pow(display.value, 2) ">
          <input class = 'top-right'type="button" value="x**3" onclick="display.value = Math.pow(display.value, 3) ">
       
        </div>
        <div>
-         <input type="button" value="asin" onclick="display.value = ((Math.asin(display.value) * 180 ) / Math.PI)">
-         <input type="button" value="acos" onclick="display.value = ((Math.acos(display.value) * 180 ) / Math.PI)">
-         <input type="button" value="atan" onclick="display.value = ((Math.atan(display.value) * 180 ) / Math.PI)">
-         <input type="button" value="abs" onclick="display.value = Math.abs(display.value) ">
-         <input type="button" value="1/X" onclick="display.value = 1/display.value ">
-         <input type="button" value="%" onclick="display.value = (display.value/100)">
+         <input id = 'button' type="button" value="asin" onclick="display.value = ((Math.asin(display.value) * 180 ) / Math.PI)">
+         <input id = 'button' type="button" value="acos" onclick="display.value = ((Math.acos(display.value) * 180 ) / Math.PI)">
+         <input id = 'button' type="button" value="atan" onclick="display.value = ((Math.atan(display.value) * 180 ) / Math.PI)">
+         <input id = 'button' type="button" value="abs" onclick="display.value = Math.abs(display.value) ">
+         <input id = 'button' type="button" value="1/X" onclick="display.value = 1/display.value ">
+         <input id = 'button' type="button" value="%" onclick="display.value = (display.value/100)">
        </div>
         <div>           
-         <input class = 'bottom-left' type="button" value="calc" onclick="display.value = eval(display.value) ">
-         <input type = "button" value = "e" onclick = "display.value += 2.718281828"> 
-         <input type="button" value="pi" onclick = "display.value += 3.14159265359 ">
-          <input type = "button" value = "ln" onclick = "display.value = Math.log(display.value) ">             
-          <input type = "button" value = "sqrt" onclick = "display.value = Math.sqrt(display.value) ">
-          <input class = 'bottom-right'type = "button" value = "cbrt" onclick = "display.value = Math.cbrt(display.value) ">
+         <input id = 'button' class = 'bottom-left' type="button" value="calc" onclick="display.value = eval(display.value) ">
+         <input id = 'button' type = "button" value = "e" onclick = "display.value += 2.718281828"> 
+         <input id = 'button' type="button" value="pi" onclick = "display.value += 3.14159265359 ">
+          <input id = 'button' type = "button" value = "ln" onclick = "display.value = Math.log(display.value) ">             
+          <input id = 'button' type = "button" value = "sqrt" onclick = "display.value = Math.sqrt(display.value) ">
+          <input id = 'button' class = 'bottom-right'type = "button" value = "cbrt" onclick = "display.value = Math.cbrt(display.value) ">
         </div>
         <div>
          <input class = 'top-left' id = 'number'type="button" value="7" onclick = "display.value += '7' ">
