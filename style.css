@@ -56,7 +56,7 @@ body {
 #operator {
   background: cadetblue;
 }
-#number:hover, #operator:hover, top-left:hover, top-right:hover, bottom-right:hover, bottom-left:hover {
+#number:hover, #operator:hover, top-left:hover, top-right:hover, bottom-right:hover, bottom-left:hover, input:hover{
   cursor: pointer;
 }
 .top-right {
