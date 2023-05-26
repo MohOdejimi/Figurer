@@ -23,8 +23,8 @@
          <input id = 'button' type="button" value="sin" onclick="display.value = Math.sin(display.value * Math.PI / 180)">
          <input id = 'button' type="button" value="cos" onclick="display.value = Math.cos(display.value * Math.PI / 180)">
          <input id = 'button' type="button" value="tan" onclick="display.value = Math.tan(display.value * Math.PI / 180)">
-         <input type="button" value="x**2" onclick="display.value = Math.pow(display.value, 2) ">
-         <input class = 'top-right'type="button" value="x**3" onclick="display.value = Math.pow(display.value, 3) ">
+         <input id = 'button' type="button" value="x**2" onclick="display.value = Math.pow(display.value, 2) ">
+         <input id = 'button' class = 'top-right'type="button" value="x**3" onclick="display.value = Math.pow(display.value, 3) ">
       
        </div>
        <div>
@@ -50,7 +50,7 @@
          <input id='operator' type="button" value="AC" onclick="display.value = '' ">
          <input id='operator' type="button" value="DE" onclick="display.value = String(display.value).slice(0,-1) ">
 
-         <input class = 'top-right'type = "button" onclick= "factorial()" value = "X!">
+         <input id = 'button' class = 'top-right'type = "button" onclick= "factorial()" value = "X!">
         </div>
         <div>
          <input id = 'number'type="button" value="4" onclick = "display.value += '4' ">
